@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R2-D2 Morse Code Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>R2-D2 Morse Code Translator</h1>
+        
+        <div class="r2d2">🤖</div>
+        
+        <div class="translator-box">
+            <div class="input-group">
+                <label for="inputText">Text to Morse Code:</label>
+                <textarea id="inputText" placeholder="Enter text to convert to Morse code..."></textarea>
+            </div>
+            
+            <div class="btn-group">
+                <button id="encodeBtn">Encode to Morse</button>
+                <button id="playBtn">Play Morse</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+        </div>
+        
+        <div class="translator-box">
+            <div class="input-group">
+                <label for="inputMorse">Morse Code to Text:</label>
+                <textarea id="inputMorse" placeholder="Enter Morse code to convert to text... (Use space between letters and / between words)"></textarea>
+            </div>
+            
+            <div class="btn-group">
+                <button id="decodeBtn">Decode to Text</button>
+                <button id="playBtnMorse">Play Morse</button>
+                <button id="clearBtnMorse">Clear</button>
+            </div>
+        </div>
+        
+        <div class="examples">
+            <h3>Example Messages:</h3>
+            <p><strong>Text to Morse:</strong> "Help me Obi-Wan!" → <code>".... . .-.. .--. / -- . / --- -... .. -....- .-- .- -. -.-.--"</code></p>
+            <p><strong>Morse to Text:</strong> <code>".... .- ...- . / -.-- --- ..- / ... . . -. / .-. --- -... --- -.. ..-.-"</code> → "HAVE YOU SEEN ROBODU?"</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
